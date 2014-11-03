@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="sytlesheet" href="/static/css/normalize.css" />
+<style>
+    header {
+      text-align: center;
+      background-size: cover;
+      color: green;
+    }
+    a {
+      color: black;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      /*background: rgba(0,0,0, 0.5);*/
+      background: #B4D7BF;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    body{
+       max-width: 900px;
+       padding: 10px;
+       margin: 0 auto;
+      }
+      @media(max-width: 500px){
+        h1 {
+           font-size: 36px;
+          }
+          li {
+            display: block;
+            padding: 5px;
+          }
+      }   
+  </style>
+
+</head>
+<body>
+<title>Filewallah App Engine</title>
+<div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <a class="brand" href="/">Filewallah</a>
+            <ul class="nav">
+               <li><a href="/">home</a></li>
+               <li><a href="about">about</a></li>
+               <li><a href="new">new</a></li>
+            </ul>
+          </div>
+        </div>
+    {% block head %}
+	<title>{% block title%}{%endblock%} - Filewallah </title>
+    {% endblock %}
+<body>
+
+<div id="body"> {% block body %}
+<p> no body has been defined</p>
+{% endblock %}</div>
+
+
+</body>
+</html>
