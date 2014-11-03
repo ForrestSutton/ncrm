@@ -52,3 +52,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+#cloud 9
+.c9/*
