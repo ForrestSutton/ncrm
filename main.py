@@ -1,7 +1,8 @@
-import cgi
-import urllib
-import webapp2
+from flask import Flask
+app = Flask(__name__)
+app.config['DEBUG'] = True
 
+import urllib
 from google.appengine.api import users
 from google.appengine.ext import ndb
 
@@ -21,6 +22,8 @@ MAIN_PAGE_FOOTER_TEMPLATE = """\
     </body>
   </html>
 """
+
+
 DEFAULT_GUESTBOOK_NAME = 'default_guestbook'
 
 def guestbook_key(guestbook_name=DEFAULT_GUESTBOOK_NAME):
