@@ -5,11 +5,11 @@ app.config['DEBUG'] = True
 import urllib
 #from google.appengine.api import users
 #from google.appengine.ext import ndb
-    
+
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+  return render_template('index.html')
 
 
 
