@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+<!-- div class="post"-->
+
+
+<div id="body"> {% block body %}
+  <h3>your latest files</h2>
+	  <hr />
+    {% for file in files %}
+      <ul>
+        <div id="post"> 
+        <li><h3>{{file.title}}{{file.link}} on {{file.adddate.strftime("%B %d, %Y")}}</h3>
+        <p>{{file.comment}} </p>
+        </li>
+        <hr />
+       </ul>
+     </div>
+    {% endfor %}
+{% endblock %}
+</div>
+</body>
+</html>
