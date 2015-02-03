@@ -2,7 +2,7 @@
 ====
 ##aka new crm 
 
-a python google app engine crm with enhacments
+a flask/python google app engine crm with enhacments
 google app engine using python - using data store and adding analytics based datastore
 
 
@@ -14,6 +14,7 @@ add data models
     *note
     *sales info - products catelog, info about environs 
     *sales data - data warehouse 
+add search user bm25 model with boost words
 
 templates
     add wtforms
