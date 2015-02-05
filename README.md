@@ -20,4 +20,7 @@ templates
     add wtforms
     *user
     *name and qd
-    
+     *accounts/prospects
+     *events
+     *notes in a twitter like layout
+
